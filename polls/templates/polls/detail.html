@@ -1,0 +1,7 @@
+<h2>{{ quest.question_text }}</h2>
+  
+<ul>
+	{% for cho in quest.choice_set.all %}
+		<li>{{ cho.choice_text }}  &nbsp;&nbsp;&nbsp;&nbsp;  votes-{{ cho.votes }} </li>
+	{% endfor %}
+</ul>
